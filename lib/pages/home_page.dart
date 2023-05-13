@@ -117,6 +117,21 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white,
                     child: Row(
                       children: [
+
+                        Expanded(
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(70),
+                                bottomRight: Radius.circular(70),
+                              ),
+                              image: DecorationImage(
+                                  image: AssetImage('assets/images/track.jpg'),
+                                  fit: BoxFit.cover),
+                            ),
+                          ),
+                        ),
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 10),
                           width: 140,
@@ -124,21 +139,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               "Biza 45 million maxsulotni\nyetkazib berdik",
                               style:
-                                  TextStyle(color: Colors.black, fontSize: 16),
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: const BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(70),
-                                bottomLeft: Radius.circular(70),
-                              ),
-                              image: DecorationImage(
-                                  image: AssetImage('assets/images/track.jpg'),
-                                  fit: BoxFit.cover),
+                              TextStyle(color: Colors.black, fontSize: 16),
                             ),
                           ),
                         ),
