@@ -166,19 +166,152 @@ class _HomePageState extends State<HomePage> {
                           child: const Center(
                             child: Text(
                               "Tizimga kirish",
-                              style: TextStyle(color: Colors.white,fontSize: 16),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 16),
                             ),
                           ),
                         ),
                         const SizedBox(height: 15),
                         const Text("Ro'yhatdan o'tish",
-                            style:
-                            TextStyle(color: Colors.blueAccent, fontSize: 18)),
+                            style: TextStyle(
+                                color: Colors.blueAccent, fontSize: 18)),
                       ],
                     ),
                   ),
-                  //List
-                  Container(),
+                  const SizedBox(height: 6),
+                  //deal
+                  Container(
+                    color: Colors.white,
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "Kun maxsuloti",
+                          style: TextStyle(color: Colors.black, fontSize: 20),
+                        ),
+                        const SizedBox(height: 10),
+                        Image(
+                          width: MediaQuery.of(context).size.width,
+                          height: 200,
+                          image: const AssetImage('assets/images/image4.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Up to 15% of APC UPS Batery back",
+                          style: TextStyle(color: Colors.black, fontSize: 17),
+                        ),
+                        const SizedBox(height: 6),
+                        const Text(
+                          "Atigi \$500 - 1000",
+                          style: TextStyle(color: Colors.black, fontSize: 13),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  //best
+                  Container(
+                    color: Colors.white,
+                    padding: const EdgeInsets.all(16),
+                    height: MediaQuery.of(context).size.width,
+                    child: const Column(
+                      children: [
+                        Text("Best bir narsalar"),
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Expanded(
+                                      child: Image(
+                                        image: AssetImage(
+                                            'assets/images/image3.jpg'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    SizedBox(height: 5),
+                                    Expanded(
+                                      child: Image(
+                                        image: AssetImage(
+                                            'assets/images/image3.jpg'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(width: 5),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Expanded(
+                                      child: Image(
+                                        image: AssetImage(
+                                            'assets/images/image3.jpg'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    SizedBox(height: 5),
+                                    Expanded(
+                                      child: Image(
+                                        image: AssetImage(
+                                            'assets/images/image3.jpg'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  //Camera
+                  Container(
+                    color: Colors.white,
+                    padding: const EdgeInsets.all(16),
+                    height: MediaQuery.of(context).size.width,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "Kamera uchun ajoyib yechim",
+                          style: TextStyle(color: Colors.black, fontSize: 20),
+                        ),
+                        Expanded(
+                          child: Image(
+                            width: MediaQuery.of(context).size.width,
+                            image: const AssetImage('assets/images/image4.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        const Expanded(
+                            child: Row(
+                          children: [
+                            Expanded(
+                              child: Image(
+                                image: AssetImage('assets/images/image4.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            SizedBox(width: 5),
+                            Expanded(
+                              child: Image(
+                                image: AssetImage('assets/images/image4.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ],
+                        )),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
