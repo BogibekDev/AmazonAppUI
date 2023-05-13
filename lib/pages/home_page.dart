@@ -117,7 +117,6 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white,
                     child: Row(
                       children: [
-
                         Expanded(
                           child: Container(
                             decoration: const BoxDecoration(
@@ -139,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               "Biza 45 million maxsulotni\nyetkazib berdik",
                               style:
-                              TextStyle(color: Colors.black, fontSize: 16),
+                                  TextStyle(color: Colors.black, fontSize: 16),
                             ),
                           ),
                         ),
