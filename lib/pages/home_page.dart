@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               "Biza 45 million maxsulotni\nyetkazib berdik",
                               style:
-                                  TextStyle(color: Colors.black, fontSize: 16),
+                              TextStyle(color: Colors.black, fontSize: 16),
                             ),
                           ),
                         ),
@@ -157,17 +157,20 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         const Text("Tizimga kirishni tavsiya qilamiz!",
                             style:
-                                TextStyle(color: Colors.black, fontSize: 18)),
+                            TextStyle(color: Colors.black, fontSize: 18)),
                         const SizedBox(height: 15),
                         Container(
-                          width: MediaQuery.of(context).size.width,
+                          width: MediaQuery
+                              .of(context)
+                              .size
+                              .width,
                           height: 50,
                           color: Colors.orange,
                           child: const Center(
                             child: Text(
                               "Tizimga kirish",
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 16),
+                              TextStyle(color: Colors.white, fontSize: 16),
                             ),
                           ),
                         ),
@@ -192,7 +195,10 @@ class _HomePageState extends State<HomePage> {
                         ),
                         const SizedBox(height: 10),
                         Image(
-                          width: MediaQuery.of(context).size.width,
+                          width: MediaQuery
+                              .of(context)
+                              .size
+                              .width,
                           height: 200,
                           image: const AssetImage('assets/images/image4.jpg'),
                           fit: BoxFit.cover,
@@ -215,54 +221,56 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     color: Colors.white,
                     padding: const EdgeInsets.all(16),
-                    height: MediaQuery.of(context).size.width,
+                    height: MediaQuery
+                        .of(context)
+                        .size
+                        .width,
                     child: const Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                    Text("Best bir narsalar",style: TextStyle(color: Colors.
+                        black, fontSize: 20),),
+                  Expanded(
+                    child: Row(
                       children: [
-                        Text("Best bir narsalar"),
                         Expanded(
-                          child: Row(
+                          child: Column(
                             children: [
                               Expanded(
-                                child: Column(
-                                  children: [
-                                    Expanded(
-                                      child: Image(
-                                        image: AssetImage(
-                                            'assets/images/image3.jpg'),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                    SizedBox(height: 5),
-                                    Expanded(
-                                      child: Image(
-                                        image: AssetImage(
-                                            'assets/images/image3.jpg'),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ],
+                                child: Image(
+                                  image: AssetImage(
+                                      'assets/images/image3.jpg'),
+                                  fit: BoxFit.cover,
                                 ),
                               ),
-                              SizedBox(width: 5),
+                              SizedBox(height: 5),
                               Expanded(
-                                child: Column(
-                                  children: [
-                                    Expanded(
-                                      child: Image(
-                                        image: AssetImage(
-                                            'assets/images/image3.jpg'),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                    SizedBox(height: 5),
-                                    Expanded(
-                                      child: Image(
-                                        image: AssetImage(
-                                            'assets/images/image3.jpg'),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ],
+                                child: Image(
+                                  image: AssetImage(
+                                      'assets/images/image3.jpg'),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 5),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage(
+                                      'assets/images/image3.jpg'),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              SizedBox(height: 5),
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage(
+                                      'assets/images/image3.jpg'),
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ],
@@ -271,54 +279,63 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 6),
-                  //Camera
-                  Container(
-                    color: Colors.white,
-                    padding: const EdgeInsets.all(16),
-                    height: MediaQuery.of(context).size.width,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          "Kamera uchun ajoyib yechim",
-                          style: TextStyle(color: Colors.black, fontSize: 20),
-                        ),
-                        Expanded(
-                          child: Image(
-                            width: MediaQuery.of(context).size.width,
-                            image: const AssetImage('assets/images/image4.jpg'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        const Expanded(
-                            child: Row(
-                          children: [
-                            Expanded(
-                              child: Image(
-                                image: AssetImage('assets/images/image4.jpg'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            SizedBox(width: 5),
-                            Expanded(
-                              child: Image(
-                                image: AssetImage('assets/images/image4.jpg'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ],
-                        )),
-                      ],
+                ],
+              ),
+            ),
+            const SizedBox(height: 6),
+            //Camera
+            Container(
+              color: Colors.white,
+              padding: const EdgeInsets.all(16),
+              height: MediaQuery
+                  .of(context)
+                  .size
+                  .width,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    "Kamera uchun ajoyib yechim",
+                    style: TextStyle(color: Colors.black, fontSize: 20),
+                  ),
+                  Expanded(
+                    child: Image(
+                      width: MediaQuery
+                          .of(context)
+                          .size
+                          .width,
+                      image: const AssetImage('assets/images/image4.jpg'),
+                      fit: BoxFit.cover,
                     ),
                   ),
+                  const Expanded(
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Image(
+                              image: AssetImage('assets/images/image4.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(width: 5),
+                          Expanded(
+                            child: Image(
+                              image: AssetImage('assets/images/image4.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ],
+                      )),
                 ],
               ),
             ),
           ],
         ),
       ),
-      drawer: const Drawer(),
+      ],
+    ),
+    ),
+    drawer: const Drawer(),
     );
   }
 }
